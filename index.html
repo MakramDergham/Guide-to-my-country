@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Italy</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <header>
+  <nav>
+    <ul>
+        <li><a href="#" id="Ht">Home</a></li>
+        <li><a href="attractions.html" id="At" >Attractions</a></li>
+        <li><a href="food.html" id="Ft">Food</a></li>
+        <li><a href ="history.html" id="Htt">History</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <img src="/assets/italy-seaside.jpg" alt ="italy"width=100%>
+  <div class="hero">
+    <h1>Italy</h1>
+    <button id="button1">Explore more</button>
+  </div>
+</div>
+<br></br>
+<main>
+  <section>
+    <div class="body1">
+      <div id="textbody">
+        <h1>Location</h1>
+        <p><strong>Italy</strong> is a country of south-central Europe, occupying a peninsula that juts deep into the Mediterranean Sea. Italy comprises some of the most varied and scenic landscapes on Earth and is often described as a country shaped like a boot. At its broad top stand the Alps, which are among the world’s most rugged mountains.</p>
+      </div>
+      <div><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12370318.24264108!2d2.1272835062355027!3d40.803857199602966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sItaly!5e0!3m2!1sen!2slb!4v1707514365015!5m2!1sen!2slb" width="400" height="300" style="border:0;"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <br>
+    </div>
+  </section>
+  <hr>
+  <br>
+  <section>
+    <div id="about">
+      <h1>About</h1>
+      <p>Italy is a country with rich history and vibrant culture, it is famous for its art, food, and beautiful landscapes. From the historic Colosseum to the charming streets of small villages, Italy offers a diverse and picturesque experience. The Italian way of life is known for its love of family, delicious cuisine, and a laid-back attitude. Whether you're exploring ancient ruins, enjoying a leisurely meal at a local trattoria, or taking in the scenic beauty of the countryside, Italy has a timeless charm that captures the hearts of visitors from around the world.</p>
+    </div>
+    <div id="album" >
+      <img src="assets/When Is the Best Time to Visit I.jpg" alt="Nature in Italy">
+      <img src="/assets/Best-of-italy.gif" alt="Italy Pictures"></img>
+      <img src="/assets/river-italy.jpg" alt="River in Italy"></img>
+    </div>
+  </section>
+  <hr>
+  <br>
+  <section>
+  <div id="culture">
+    <div>
+      <img  id="culturepic" src="/assets/italy_culture.jpg" alt="Italy Culture">
+    </div>
+    <div id="culturetext">
+      <h1>Culture</h1>
+      <p>Italian culture is a captivating blend of history, art, and heartfelt traditions. From the masterpieces of the Renaissance to the vibrant expressions in modern life, Italy is a cultural treasure trove. Family plays a central role, and close-knit communities celebrate enduring customs. Food is a cherished aspect, with diverse regional cuisines reflecting a rich culinary heritage. Festivals like Carnival and Palio highlight the Italian love for celebration and history. The essence of la dolce vita, the sweet life, permeates everyday living, making Italian culture a source of warmth and joy for both locals and visitors alike.</p>
+    </div>
+  </div>
+  </section>
+  <article id="travel_tips">
+    <div style="width:50%">
+      <h1>Travel Tips</h1>
+      <p>For a smooth trip to Italy, use the Euro and keep some cash. While English is common, learning basic Italian is helpful. Utilize the reliable public transport system, be cautious of pickpockets, and respect local customs, especially in religious sites. Be aware of afternoon closures in smaller towns and purchase tickets in advance for popular attractions. Mind Monday closures for museums, tip when appropriate, and try local dishes. Stay hydrated with tap water, check the weather, and know emergency numbers. Lastly, embrace Italian etiquette, such as cheek kisses in social situations. These tips ensure an enjoyable Italian adventure.</p>
+    </div>
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Z97Odil2NwQ?si=u18Mfu5gLYj-uRRB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="margin-top:70px;margin-left:150px"></iframe>
+    </div>
+  </article>
+  <section id="section3">
+    <h1>Quiz Time!</h1>
+    <h4>What is the capital of Italy?</h4>
+    <div id="city_buttons">
+      <button id="venice_button" onclick="checkCity(this)">Venice</button>
+      <button id="rome_button" onclick="checkCity(this)">Rome</button>
+      <button id="turin_button" onclick="checkCity(this)">Turin</button>
+    </div>
+    <div id="display_text">
+      <h1>Correct!</h1>
+      <div id="display-answer">
+        <img src="assets/Rome.jpg" alt="Rome" width="500" >
+        <p style="margin-left: 90px;">Rome, Italy's capital, is a city with a rich history spanning over 2,500 years. Known as the "Eternal City," it was once the core of the mighty Roman Empire. Famous landmarks like the Colosseum and Roman Forum showcase its ancient past. The Pantheon, a well-preserved temple, and Vatican City with St. Peter's Basilica add to its cultural richness. Rome is not just about history; it's a living art gallery with masterpieces by Michelangelo and others. The city is also a haven for food lovers, offering classic Italian dishes like pasta and pizza. Modern Rome, with its lively neighborhoods and vibrant nightlife, blends seamlessly with its historical charm, making it a captivating destination for all.</p>
+      </div>
+    </div>
+    <h1 id="wrong_answer">Try Again!</h1>
+  </section>
+</main>
+<footer>
+  <div>
+  <img src="/assets/Flag_of_Italy.jpg" alt="Italy Flag" ></img>
+  <p>By Makram Dergham <br><a href="mailto:derghammakram@gmail.com">derghammakram@gmail.com</a></p>
+</div>
+</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
