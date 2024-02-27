@@ -65,7 +65,7 @@ nav ul li:not(:hover){
     color:#ce2b37;
     text-decoration: none
 }
-.container {
+.container1 {
     position: relative;
     width: auto;
     height:auto
@@ -283,7 +283,110 @@ article h1{
     opacity: 1; 
 }
 
+* {
+    box-sizing: border-box
+}
+  .mySlides {
+    display: none
+  }
+  img {
+    vertical-align: middle;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
 
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active,
+  .dot:hover {
+    background-color: #111111;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }
 section h1{
     font-size: 60px
 }
@@ -295,85 +398,7 @@ section h1{
     position:fixed;
     z-index:100
 }
-* {
-  box-sizing: border-box;
-}
-  
-.mySlides img {
-  vertical-align: middle;
-}
-  
-.container2 {
-  position: relative;
-}
-.mySlides {
-  display: none;
-}
-  
-.cursor {
-  cursor: pointer;
-}
-  
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-  }
-  
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-  
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-  
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  }
-  
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-  }
-  
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  }
 
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 #italian_food{
     width:100%
 }
@@ -385,10 +410,57 @@ section h1{
 .food{
     height:300px;
     width:300px;
-    background-color: rgb(57, 80, 98);
-    margin:20px
+    background-color: rgb(122, 191, 245);
+    margin:20px;
+    box-shadow: 0px 0px 5px 6px lightblue;
+    display: flex;
+    z-index: 1;
 }
-.food:hover{
-    box-shadow: 0px 0px 10px white;
-    transition: box-shadow 2s ease-in-out;
+
+.food:hover .food_pic{
+    margin-top: 300px;
+}
+.food:hover .food_name{
+    margin:5px
+}
+@keyframes movetitle{
+
+    100%{margin:10px}
+}
+.food_name{
+    /* align-self: center; */
+    margin:110px;
+    font-size: 35px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgb(14, 27, 37);
+    z-index: 2;
+    transition: margin 1s ease-in-out
+}
+
+.food_pic{
+    margin-top: 0px;
+    transition: margin-top 1s ease-in-out;
+    position: absolute;
+    height: inherit;
+    z-index: 0;
+}
+.food_description{
+    position: absolute;
+    z-index:3;
+    width:300px;
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 100px;
+    opacity: 0;
+    transition: opacity 2s ease;
+    margin-left: 10px;
+}
+.food:hover .food_description{
+    opacity: 1; 
+}
+#food_paragraph{
+    border: #11111d solid 1px;
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
 }
