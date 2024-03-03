@@ -15,6 +15,11 @@ main{
     margin-left: 40px;
     margin-right: 40px;
 }
+section{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 nav{
     width:100%;
     position:relative;
@@ -136,6 +141,7 @@ nav ul li:not(:hover){
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 60px;
+    margin-top: 50px;
 }
 #album img{
     height:inherit
@@ -207,12 +213,18 @@ footer a{
 }
 #venice_button{
    background-color:#009246;
+   border: none;
+   color: white
 }
 #rome_button{
     background-color: #ffffff;
+    border: none;
+
 }
 #turin_button{
     background-color:#ce2b37;
+    border: none;
+   color: white
 }
 #display_text{
     display:none
